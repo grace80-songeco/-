@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>YouTube Viewer</title></head>
+<body>
+  <h1>YouTube Unblocked Viewer</h1>
+  <input type="text" id="vid" placeholder="YouTube Video ID (예: dQw4w9WgXcQ)">
+  <button onclick="play()">Play</button>
+  <br><br>
+  <iframe id="player" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+
+  <script>
+  function play() {
+    var id = document.getElementById('vid').value;
+    document.getElementById('player').src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+  }
+  </script>
+</body>
+</html>
