@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head><title>YouTube Viewer</title></head>
+  <head>
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+</head>
 <body>
   <h1>YouTube Unblocked Viewer</h1>
   <input type="text" id="vid" placeholder="YouTube Video ID (예: dQw4w9WgXcQ)">
   <button onclick="play()">Play</button>
   <br><br>
   <iframe 
-    id="player" 
-    width="560" 
-    height="315" 
-    frameborder="0" 
-    allowfullscreen
-    referrerpolicy="strict-origin-when-cross-origin"  <!-- 핵심! -->
-  ></iframe>
+  id="player" 
+  width="560" 
+  height="315" 
+  frameborder="0" 
+  allowfullscreen
+  referrerpolicy="strict-origin-when-cross-origin"  <!-- 이 줄 추가 또는 수정 -->
+></iframe>
 
   <script>
   function play() {
